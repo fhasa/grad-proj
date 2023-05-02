@@ -4,7 +4,7 @@ case 8
 in this case all  motors from cell two
 must move forward and backward and stop togther
 
-cell-no: 21
+cell-no: 2
 motor: F, T, M
 
 movement: 

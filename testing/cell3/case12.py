@@ -1,16 +1,16 @@
 '''
-case 8
+case 12
 
-in this case all  motors from cell two
+in this case all  motors from cell three
 must move forward and backward and stop togther
 
-cell-no: 21
+cell-no: 3
 motor: F, T, M
 
 movement: 
 F,T, M: Forward and backward and Stop
 
-Excpected output: all  motors from cell2 
+Excpected output: all  motors from cell3 
 move forward for 8 second then backward 
 for 7 second then the whole cell stops
 '''
@@ -119,43 +119,43 @@ the running code will start here
  here i define the code as a function and i call it
 '''
 
-def case8():# whole cell will move forward and backward and stop togther
+def case12():# whole cell will move forward and backward and stop togther
 
-    # cell2 move forward 
-    #cell2 f movement 
-    GPIO.output(cell2Fa,GPIO.LOW)
-    GPIO.output(cell2Fb,GPIO.HIGH)
-    #cell2 T movement 
-    GPIO.output(cell2Ta,GPIO.LOW)
-    GPIO.output(cell2Tb,GPIO.HIGH)    
-    #cell2 M movement 
-    GPIO.output(cell2Ma,GPIO.LOW)
-    GPIO.output(cell2Mb,GPIO.HIGH)   
+    # cell3 move forward 
+    #cell3 f movement 
+    GPIO.output(cell3Fa,GPIO.LOW)
+    GPIO.output(cell3Fb,GPIO.HIGH)
+    #cell3 T movement 
+    GPIO.output(cell3Ta,GPIO.LOW)
+    GPIO.output(cell3Tb,GPIO.HIGH)    
+    #cell3 M movement 
+    GPIO.output(cell3Ma,GPIO.LOW)
+    GPIO.output(cell3Mb,GPIO.HIGH)   
     sleep(8)
 
-    # cell2 move backward 
-    #cell2 f movement 
-    GPIO.output(cell2Fa,GPIO.HIGH)
-    GPIO.output(cell2Fb,GPIO.LOW)
-    #cell2 T movement 
-    GPIO.output(cell2Ta,GPIO.HIGH)
-    GPIO.output(cell2Tb,GPIO.LOW)    
-    #cell2 M movement 
-    GPIO.output(cell2Ma,GPIO.HIGH)
-    GPIO.output(cell2Mb,GPIO.LOW)  
+    # cell3 move backward 
+    #cell3 f movement 
+    GPIO.output(cell3Fa,GPIO.HIGH)
+    GPIO.output(cell3Fb,GPIO.LOW)
+    #cell3 T movement 
+    GPIO.output(cell3Ta,GPIO.HIGH)
+    GPIO.output(cell3Tb,GPIO.LOW)    
+    #cell3 M movement 
+    GPIO.output(cell3Ma,GPIO.HIGH)
+    GPIO.output(cell3Mb,GPIO.LOW)  
 
     sleep(6)
-    # cell 2 stop 
-    #cell2 f movement 
-    GPIO.output(cell2Fa,GPIO.LOW)
-    GPIO.output(cell2Fb,GPIO.LOW)
-    #cell2 T movement 
-    GPIO.output(cell2Ta,GPIO.LOW)
-    GPIO.output(cell2Tb,GPIO.LOW)    
-    #cell2 M movement 
-    GPIO.output(cell2Ma,GPIO.LOW)
-    GPIO.output(cell2Mb,GPIO.LOW) 
+    # cell 3 stop 
+    #cell3 f movement 
+    GPIO.output(cell3Fa,GPIO.LOW)
+    GPIO.output(cell3Fb,GPIO.LOW)
+    #cell3 T movement 
+    GPIO.output(cell3Ta,GPIO.LOW)
+    GPIO.output(cell3Tb,GPIO.LOW)    
+    #cell3 M movement 
+    GPIO.output(cell3Ma,GPIO.LOW)
+    GPIO.output(cell3Mb,GPIO.LOW) 
     GPIO.cleanup() 
 
 
-case8()     
+case12()     

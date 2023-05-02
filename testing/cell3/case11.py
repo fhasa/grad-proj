@@ -1,18 +1,18 @@
 '''
-case 9
+case 11
 
-in this case F motor from cell three 
+in this case M motor from cell three 
 must move forward and backword 
 
 cell-no: 3
-motor: F
+motor: M
 movement
 
-F: Forward and backward
+M: Forward and backward
 T: stop
-M: Stop
+F: Stop
 
-Excpected output:  F motor from cell3
+Excpected output:  M motor from cell3
 move forward for 8 second then backward 
 for 7 second then the whole cell stops
 '''
@@ -121,29 +121,29 @@ the running code will start here
  here i define the code as a function and i call it
 '''
 
-def case9():# F will move forward and backward 
+def case11():# M will move forward and backward 
 
-    # F move forward 
+    #  M  move forward 
     #cell3 f movement 
     GPIO.output(cell3Fa,GPIO.LOW)
-    GPIO.output(cell3Fb,GPIO.HIGH)
-    #cell3 T movement 
-    GPIO.output(cell3Ta,GPIO.LOW)
-    GPIO.output(cell3Tb,GPIO.LOW)    
-    #cell3 M movement 
-    GPIO.output(cell3Ma,GPIO.LOW)
-    GPIO.output(cell3Mb,GPIO.LOW)   
-    sleep(8)
-
-    # F move backward 
-    #cell3 f movement 
-    GPIO.output(cell3Fa,GPIO.HIGH)
     GPIO.output(cell3Fb,GPIO.LOW)
     #cell3 T movement 
     GPIO.output(cell3Ta,GPIO.LOW)
     GPIO.output(cell3Tb,GPIO.LOW)    
     #cell3 M movement 
     GPIO.output(cell3Ma,GPIO.LOW)
+    GPIO.output(cell3Mb,GPIO.HIGH)   
+    sleep(8)
+
+    # M move backward 
+    #cell3 f movement 
+    GPIO.output(cell3Fa,GPIO.LOW)
+    GPIO.output(cell3Fb,GPIO.LOW)
+    #cell3 T movement 
+    GPIO.output(cell3Ta,GPIO.LOW)
+    GPIO.output(cell3Tb,GPIO.LOW)    
+    #cell3 M movement 
+    GPIO.output(cell3Ma,GPIO.HIGH)
     GPIO.output(cell3Mb,GPIO.LOW)  
 
     sleep(6)
@@ -160,4 +160,4 @@ def case9():# F will move forward and backward
     GPIO.cleanup() 
 
 
-case9()     
+case11()     
