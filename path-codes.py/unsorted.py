@@ -147,6 +147,7 @@ def moveUnsorted():
     GPIO.output(cell3Mb,GPIO.LOW)  
 
     sleep(15)
+    GPIO.cleanup() 
 
 
 
