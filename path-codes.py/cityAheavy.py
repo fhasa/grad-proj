@@ -156,8 +156,9 @@ def moveCityAheavy():
     # m backword
     GPIO.output(cell3Ma,GPIO.HIGH)
     GPIO.output(cell3Mb,GPIO.LOW)  
-
     sleep(15)
+    GPIO.cleanup() 
+moveCityAheavy()
 
 
 
