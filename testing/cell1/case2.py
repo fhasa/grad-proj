@@ -157,7 +157,8 @@ def case2():# T will move forward and backward
     #cell1 M movement 
     GPIO.output(cell1Ma,GPIO.LOW)
     GPIO.output(cell1Mb,GPIO.LOW) 
-    GPIO.cleanup() 
 
 
 case2()     
+sleep(5)
+GPIO.cleanup() 

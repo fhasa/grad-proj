@@ -8,7 +8,7 @@ motor: all motors
 movement
 
 
-Excpected output:  cell 1 , cell 2, cell 3a nd cell 4 will move 8 seconds together 
+Excpected output:  cell 1 , cell 2, cell 3 and cell 4 will move 8 seconds together 
 forward and then stop
 '''
 import RPi.GPIO as GPIO

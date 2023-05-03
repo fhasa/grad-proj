@@ -155,7 +155,8 @@ def case8():# whole cell will move forward and backward and stop togther
     #cell2 M movement 
     GPIO.output(cell2Ma,GPIO.LOW)
     GPIO.output(cell2Mb,GPIO.LOW) 
-    GPIO.cleanup() 
 
 
 case8()     
+sleep(5)  
+GPIO.cleanup()

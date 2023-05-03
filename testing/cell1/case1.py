@@ -160,4 +160,6 @@ def case1():# F will move forward and backward
     GPIO.cleanup() 
 
 
-case1()     
+case1()   
+sleep(6)
+GPIO.cleanup() 

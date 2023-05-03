@@ -121,7 +121,8 @@ the running code will start here
  here i define the code as a function and i call it
 '''
 
-def case9():# F will move forward and backward 
+def case9():
+    # F will move forward and backward 
 
     # F move forward 
     #cell3 f movement 
@@ -157,7 +158,8 @@ def case9():# F will move forward and backward
     #cell3 M movement 
     GPIO.output(cell3Ma,GPIO.LOW)
     GPIO.output(cell3Mb,GPIO.LOW) 
-    GPIO.cleanup() 
 
 
 case9()     
+sleep(5)  
+GPIO.cleanup()
