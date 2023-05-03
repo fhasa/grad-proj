@@ -136,19 +136,19 @@ def moveCityBheavy():
     #cell4 movements
 
     #cell4 f movement 
-    GPIO.output(cell3Fa,GPIO.HIGH)
-    GPIO.output(cell3Fb,GPIO.LOW)
+    GPIO.output(cell4Fa,GPIO.HIGH)
+    GPIO.output(cell4Fb,GPIO.LOW)
     #cell4 T movement 
-    GPIO.output(cell3Ta,GPIO.LOW)
-    GPIO.output(cell3Tb,GPIO.LOW)    
+    GPIO.output(cell4Ta,GPIO.LOW)
+    GPIO.output(cell4Tb,GPIO.LOW)    
     #cell4 M movement 
-    GPIO.output(cell3Ma,GPIO.HIGH)
-    GPIO.output(cell3Mb,GPIO.LOW)  
+    GPIO.output(cell4Ma,GPIO.HIGH)
+    GPIO.output(cell4Mb,GPIO.LOW)
 
     sleep(15)
-    GPIO.cleanup() 
+    
     
 moveCityBheavy()
-
+GPIO.cleanup() 
 
 

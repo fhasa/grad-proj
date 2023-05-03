@@ -214,7 +214,8 @@ def case20():
     #cell4 M movement 
     GPIO.output(cell4Ma,GPIO.LOW)
     GPIO.output(cell4Mb,GPIO.LOW) 
-    GPIO.cleanup() 
 
 
-case20()     
+case20() 
+sleep(8)    
+GPIO.cleanup() 

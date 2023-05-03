@@ -118,14 +118,15 @@ def moveUnsorted():
     GPIO.output(cell2Fb,GPIO.LOW)
     #cell2 T movement 
     GPIO.output(cell2Ta,GPIO.LOW)
-    GPIO.output(cell2Tb,GPIO.LOw)    
+    GPIO.output(cell2Tb,GPIO.LOW)    
     #cell2 M movement 
     GPIO.output(cell2Ma,GPIO.HIGH)
     GPIO.output(cell2Mb,GPIO.LOW)  
  
 
     sleep(15)
-    GPIO.cleanup() 
+   
 
 moveUnsorted()
-
+sleep(5)
+GPIO.cleanup() 

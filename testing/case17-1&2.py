@@ -190,7 +190,8 @@ def case17():
     #cell2 M movement 
     GPIO.output(cell2Ma,GPIO.LOW)
     GPIO.output(cell2Mb,GPIO.LOW) 
-    GPIO.cleanup() 
 
 
 case17()     
+sleep(9)
+GPIO.cleanup() 
