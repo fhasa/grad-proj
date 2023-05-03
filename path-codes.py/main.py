@@ -97,10 +97,4 @@ GPIO.setup(cell4Ma,GPIO.OUT)
 GPIO.setup(cell4Mb,GPIO.OUT)
 # settig pins ends here
 
-
-
-
-
-
-
 GPIO.cleanup()

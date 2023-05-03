@@ -108,6 +108,8 @@ def moveUnsorted():
     #cell1 M movement 
     GPIO.output(cell1Ma,GPIO.LOW)
     GPIO.output(cell1Mb,GPIO.LOW)   
+
+   
     
     #cell2 movements
 
@@ -120,31 +122,7 @@ def moveUnsorted():
     #cell2 M movement 
     GPIO.output(cell2Ma,GPIO.HIGH)
     GPIO.output(cell2Mb,GPIO.LOW)  
-   
-    #cell3 movements
-
-    #cell3 f movement 
-    GPIO.output(cell3Fa,GPIO.LOW)
-    GPIO.output(cell3Fb,GPIO.HIGH)
-    #cell3 T movement 
-    GPIO.output(cell3Ta,GPIO.LOW)
-    GPIO.output(cell3Tb,GPIO.HIGH)    
-    #cell3 M movement 
-    GPIO.output(cell3Ma,GPIO.LOW)
-    GPIO.output(cell3Mb,GPIO.LOW)  
-   
-
-    #cell4 movements
-
-    #cell4 f movement 
-    GPIO.output(cell3Fa,GPIO.HIGH)
-    GPIO.output(cell3Fb,GPIO.LOW)
-    #cell4 T movement 
-    GPIO.output(cell3Ta,GPIO.LOW)
-    GPIO.output(cell3Tb,GPIO.LOW)    
-    #cell4 M movement 
-    GPIO.output(cell3Ma,GPIO.HIGH)
-    GPIO.output(cell3Mb,GPIO.LOW)  
+ 
 
     sleep(15)
     GPIO.cleanup() 
