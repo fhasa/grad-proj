@@ -94,8 +94,8 @@ GPIO.setup(cell4Ma,GPIO.OUT)
 GPIO.setup(cell4Mb,GPIO.OUT)
 # settig pins ends here
 
-def moveCityBheavy():
-
+def moveCityBlight():
+    
     #cell1 movements
 
     #cell1 f movement 
@@ -111,14 +111,14 @@ def moveCityBheavy():
     #cell2 movements
 
     #cell2 f movement 
-    GPIO.output(cell2Fa,GPIO.LOW)
-    GPIO.output(cell2Fb,GPIO.HIGH)
+    GPIO.output(cell2Fa,GPIO.HIGH)
+    GPIO.output(cell2Fb,GPIO.LOW)
     #cell2 T movement 
-    GPIO.output(cell2Ta,GPIO.LOW)
-    GPIO.output(cell2Tb,GPIO.HIGH)    
+    GPIO.output(cell2Ta,GPIO.HIGH)
+    GPIO.output(cell2Tb,GPIO.LOW)    
     #cell2 M movement 
     GPIO.output(cell2Ma,GPIO.LOW)
-    GPIO.output(cell2Mb,GPIO.LOW)  
+    GPIO.output(cell2Mb,GPIO.HIGH)  
    
     #cell3 movements
 
@@ -136,17 +136,19 @@ def moveCityBheavy():
     #cell4 movements
 
     #cell4 f movement 
-    GPIO.output(cell3Fa,GPIO.HIGH)
-    GPIO.output(cell3Fb,GPIO.LOW)
+    GPIO.output(cell4Fa,GPIO.LOW)
+    GPIO.output(cell4Fb,GPIO.HIGH)
     #cell4 T movement 
-    GPIO.output(cell3Ta,GPIO.LOW)
-    GPIO.output(cell3Tb,GPIO.LOW)    
+    GPIO.output(cell4Ta,GPIO.LOW)
+    GPIO.output(cell4Tb,GPIO.HIGH)    
     #cell4 M movement 
-    GPIO.output(cell3Ma,GPIO.HIGH)
-    GPIO.output(cell3Mb,GPIO.LOW)  
+    GPIO.output(cell4Ma,GPIO.LOW)
+    GPIO.output(cell4Mb,GPIO.LOW)  
 
-    sleep(15)
-    GPIO.cleanup() 
+
+moveCityBlight()
+sleep(15)
+GPIO.cleanup() 
 
 
 
