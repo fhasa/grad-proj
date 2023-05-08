@@ -43,27 +43,6 @@ cell2Ma=15
 cell2Mb=17
 
 
-#cell3
-
-cell3Fa= 27
-cell3Fb=23
-cell3Ta = 24
-cell3Tb=10
-cell3Ma=9
-cell3Mb=11
-
-#cell4
-
-cell4Fa= 25
-cell4Fb=8
-cell4Ta =7
-cell4Tb=1
-cell4Ma=12
-cell4Mb=16
-
-
-
-
 # speed pin
 
 #cell1
@@ -85,27 +64,6 @@ GPIO.setup(cell2Fa,GPIO.OUT)
 
 GPIO.setup(cell2Ma,GPIO.OUT)
 GPIO.setup(cell2Mb,GPIO.OUT)
-
-#cell3
-GPIO.setup(cell3Ta,GPIO.OUT)
-GPIO.setup(cell3Tb,GPIO.OUT)
-
-GPIO.setup(cell3Fb,GPIO.OUT)
-GPIO.setup(cell3Fa,GPIO.OUT)
-
-GPIO.setup(cell3Ma,GPIO.OUT)
-GPIO.setup(cell3Mb,GPIO.OUT)
-
-#cell4
-GPIO.setup(cell4Ta,GPIO.OUT)
-GPIO.setup(cell4Tb,GPIO.OUT)
-
-GPIO.setup(cell4Fb,GPIO.OUT)
-GPIO.setup(cell4Fa,GPIO.OUT)
-
-GPIO.setup(cell4Ma,GPIO.OUT)
-GPIO.setup(cell4Mb,GPIO.OUT)
-# settig pins ends here
 
 
 
