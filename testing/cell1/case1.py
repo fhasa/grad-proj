@@ -68,7 +68,7 @@ def case1():# F will move forward and backward
     #cell1 M movement 
     GPIO.output(cell1Ma,GPIO.LOW)
     GPIO.output(cell1Mb,GPIO.LOW)   
-    sleep(8)
+    sleep(12)
 
     # F move backward 
     #cell1 f movement 
@@ -81,7 +81,7 @@ def case1():# F will move forward and backward
     GPIO.output(cell1Ma,GPIO.LOW)
     GPIO.output(cell1Mb,GPIO.LOW)  
 
-    sleep(6)
+    sleep(12)
     # cell 1 stop 
     #cell1 f movement 
     GPIO.output(cell1Fa,GPIO.LOW)
@@ -92,9 +92,6 @@ def case1():# F will move forward and backward
     #cell1 M movement 
     GPIO.output(cell1Ma,GPIO.LOW)
     GPIO.output(cell1Mb,GPIO.LOW) 
-    GPIO.cleanup() 
 
 
 case1()   
-sleep(6)
-GPIO.cleanup() 
